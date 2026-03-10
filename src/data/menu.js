@@ -1,0 +1,60 @@
+export const productos = [
+  {
+    id: 1,
+    nombre: "Alitas BBQ",
+    emoji: "🍗",
+    descripcion: "Alitas crujientes bañadas en salsa BBQ, acompañadas de papas fritas.",
+    precio: "Bs. 18",
+    tags: ["Normal", "Picante"],
+    imagen: "/images/alitas.avif",
+    ingredientes: [
+      { icono: "🍗", nombre: "Alitas de pollo" },
+      { icono: "🍅", nombre: "Salsa BBQ casera" },
+      { icono: "🌶️", nombre: "Chile rojo (versión picante)" },
+      { icono: "🧄", nombre: "Ajo y especias" },
+      { icono: "🍟", nombre: "Papas fritas" },
+      // { icono: "🌿", nombre: "Perejil fresco" },
+    ],
+  },
+  {
+    id: 2,
+    nombre: "Mini Hamburguesas",
+    emoji: "🍔",
+    descripcion: "Trío de mini burgers con carne jugosa, queso americano y pan brioche.",
+    precio: "Bs. 12",
+    tags: ["Clásica"],
+    imagen: "/images/hamburguesas.avif",
+    ingredientes: [
+      { icono: "🥩", nombre: "Carne res 100% premium" },
+      { icono: "🧀", nombre: "Queso chedar" },
+      { icono: "🍞", nombre: "Pan" },
+      { icono: "🧅", nombre: "Cebolla caramelizada" },
+      { icono: "🍅", nombre: "Salsa especial Brissi" },
+      // { icono: "🥒", nombre: "Pepinillo artesanal" },
+    ],
+  },
+  {
+    id: 3,
+    nombre: "Pipocas de Pollo",
+    emoji: "🍿",
+    descripcion: "Bocaditos crujientes de pollo apanado con papas y salsa de tomate.",
+    precio: "Bs. 16",
+    tags: ["Crujiente"],
+    imagen: "/images/pipocas.avif",
+    ingredientes: [
+      { icono: "🍗", nombre: "Pechuga de pollo troceada" },
+      { icono: "🌾", nombre: "Apanado crocante especial" },
+      { icono: "🧂", nombre: "Mix de especias secretas" },
+      { icono: "🍟", nombre: "Papas fritas" },
+      { icono: "🍅", nombre: "Ketchup artesanal" },
+      // { icono: "🌿", nombre: "Hierbas aromáticas" },
+    ],
+  },
+];
+
+export const bebidas = [
+  { nombre: "Coca-Cola Mini", precio: "Bs. 8",  icono: "🥤" },
+  { nombre: "Fanta Mini",     precio: "Bs. 8",  icono: "🍊" },
+  { nombre: "Sprite Mini",    precio: "Bs. 8",  icono: "💚" },
+  { nombre: "Jugo Natural",   precio: "Bs. 12", icono: "🍓" },
+];
