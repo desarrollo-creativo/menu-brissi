@@ -2,13 +2,93 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/images/icono.avif" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0f0408" />
-    <title>El Sazón de Brissi · Menú Digital</title>
+
+    <title>El Sazón de Brissi</title>
+    <meta name="description" content="Ven a probar el verdadero sabor" />
+    <meta name="keywords" content="El Sazón de Brissi, menú, alitas BBQ, mini hamburguesas, pipocas de pollo, comida rápida, Trinidad, Beni, Bolivia" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="El Sazón de Brissi" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/avif" href="/images/icono.avif" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- Open Graph (Facebook, WhatsApp) -->
+    <!-- Cuando tengas el dominio final, cambia las rutas de imagen por URLs absolutas (https://tu-dominio/...) y agrega og:url -->
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:locale" content="es_BO" />
+    <meta property="og:site_name" content="El Sazón de Brissi" />
+    <meta property="og:title" content="El Sazón de Brissi" />
+    <meta property="og:description" content="Ven a probar el verdadero sabor" />
+    <meta property="og:image" content="/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Alitas BBQ, pipocas de pollo y mini hamburguesas de El Sazón de Brissi" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="El Sazón de Brissi" />
+    <meta name="twitter:description" content="Ven a probar el verdadero sabor" />
+    <meta name="twitter:image" content="/images/og-image.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "El Sazón de Brissi",
+        "description": "Ven a probar el verdadero sabor",
+        "image": "/images/og-image.jpg",
+        "logo": "/images/logo.png",
+        "telephone": "+59172825669",
+        "servesCuisine": ["Comida rápida", "Alitas", "Hamburguesas"],
+        "priceRange": "Bs. 4 - Bs. 20",
+        "currenciesAccepted": "BOB",
+        "hasMap": "https://maps.app.goo.gl/wqYsAEBvpWTr76WP6",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Trinidad",
+          "addressRegion": "Beni",
+          "addressCountry": "BO"
+        },
+        "hasMenu": {
+          "@type": "Menu",
+          "hasMenuSection": [
+            {
+              "@type": "MenuSection",
+              "name": "Comidas",
+              "hasMenuItem": [
+                { "@type": "MenuItem", "name": "Alitas BBQ", "offers": { "@type": "Offer", "price": "20", "priceCurrency": "BOB" } },
+                { "@type": "MenuItem", "name": "Mini Hamburguesas", "offers": { "@type": "Offer", "price": "15", "priceCurrency": "BOB" } },
+                { "@type": "MenuItem", "name": "Pipocas de Pollo", "offers": { "@type": "Offer", "price": "18", "priceCurrency": "BOB" } }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Bebidas",
+              "hasMenuItem": [
+                { "@type": "MenuItem", "name": "Coca-Cola Mini", "offers": { "@type": "Offer", "price": "4", "priceCurrency": "BOB" } },
+                { "@type": "MenuItem", "name": "Fanta Mini", "offers": { "@type": "Offer", "price": "4", "priceCurrency": "BOB" } },
+                { "@type": "MenuItem", "name": "Sprite Mini", "offers": { "@type": "Offer", "price": "4", "priceCurrency": "BOB" } },
+                { "@type": "MenuItem", "name": "Refresco Natural", "offers": { "@type": "Offer", "price": "4", "priceCurrency": "BOB" } }
+              ]
+            }
+          ]
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript>
+      <h1>El Sazón de Brissi</h1>
+      <p>Ven a probar el verdadero sabor. Alitas BBQ, mini hamburguesas y pipocas de pollo en Trinidad – Beni, Bolivia.</p>
+      <p>WhatsApp: <a href="https://wa.me/59172825669">+591 72825669</a> · <a href="https://maps.app.goo.gl/wqYsAEBvpWTr76WP6">Ver ubicación</a></p>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

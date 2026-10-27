@@ -4,7 +4,9 @@ import CategoryTabs from './components/CategoryTabs';
 import ProductCard from './components/ProductCard';
 import ProductModal from './components/ProductModal';
 import BeverageCard from './components/BeverageCard';
+import WhatsAppButton from './components/WhatsAppButton';
 import { productos, bebidas } from './data/menu';
+import { contacto, whatsappUrl } from './data/contacto';
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -43,7 +45,7 @@ export default function App() {
         maxWidth: 480,
         margin: '0 auto',
         minHeight: '100vh',
-        paddingBottom: 40,
+        paddingBottom: 96,
         opacity: showSplash ? 0 : 1,
         transition: 'opacity 0.5s ease 0.1s',
       }}>
@@ -55,18 +57,22 @@ export default function App() {
           animation: 'fade-in-up 0.6s ease both',
           animationDelay: '0.1s',
         }}>
-          <img
-            src="/images/logo.avif"
-            alt="El Sazón de Brissi"
-            style={{
-              width: 'min(65vw, 200px)',
-              height: 'auto',
-              objectFit: 'contain',
-              filter: 'drop-shadow(0 0 16px rgba(236,72,153,0.6))',
-              animation: 'float 4s ease-in-out infinite',
-              marginBottom: 14,
-            }}
-          />
+          <h1 style={{ margin: 0, lineHeight: 0 }}>
+            <img
+              src="/images/logo.avif"
+              alt="El Sazón de Brissi"
+              width="200"
+              height="96"
+              style={{
+                width: 'min(65vw, 200px)',
+                height: 'auto',
+                objectFit: 'contain',
+                filter: 'drop-shadow(0 0 16px rgba(236,72,153,0.6))',
+                animation: 'float 4s ease-in-out infinite',
+                marginBottom: 14,
+              }}
+            />
+          </h1>
           <p style={{
             fontFamily: "'Dancing Script', cursive",
             fontSize: 18,
@@ -76,14 +82,22 @@ export default function App() {
           }}>
             Ven a probar el verdadero sabor
           </p>
-          <p style={{
-            fontFamily: "'Nunito', sans-serif",
-            fontSize: 12,
-            color: 'rgba(249,168,212,0.55)',
-            letterSpacing: '0.5px',
-          }}>
-            📍 Trinidad – Beni, Bolivia
-          </p>
+          <a
+            href={contacto.ubicacionMaps}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-block',
+              fontFamily: "'Nunito', sans-serif",
+              fontSize: 12,
+              color: 'rgba(249,168,212,0.75)',
+              letterSpacing: '0.5px',
+              textDecoration: 'underline',
+              textUnderlineOffset: 3,
+            }}
+          >
+            📍 {contacto.ubicacionTexto} · Ver ubicación
+          </a>
         </header>
 
         {/* Tabs */}
@@ -128,13 +142,32 @@ export default function App() {
           </p>
           <p style={{
             fontFamily: "'Nunito', sans-serif",
-            fontSize: 11,
-            color: 'rgba(249,168,212,0.4)',
+            fontSize: 12,
+            color: 'rgba(249,168,212,0.6)',
+            lineHeight: 1.9,
           }}>
-            📍 Trinidad – Beni, Bolivia · Menú Digital
+            <a
+              href={contacto.ubicacionMaps}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: 3 }}
+            >
+              📍 {contacto.ubicacionTexto}
+            </a>
+            <br />
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: 3 }}
+            >
+              💬 WhatsApp {contacto.whatsappVisible}
+            </a>
           </p>
         </footer>
       </div>
+
+      {!showSplash && <WhatsAppButton />}
 
       {/* Modal */}
       {selectedProduct && (

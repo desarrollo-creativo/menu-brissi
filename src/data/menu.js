@@ -4,7 +4,7 @@ export const productos = [
     nombre: "Alitas BBQ",
     emoji: "🍗",
     descripcion: "Alitas crujientes bañadas en salsa BBQ, acompañadas de papas fritas.",
-    precio: "Bs. 18",
+    precio: "Bs. 20",
     tags: ["Normal", "Picante"],
     imagen: "/images/alitas.avif",
     ingredientes: [
@@ -21,7 +21,7 @@ export const productos = [
     nombre: "Mini Hamburguesas",
     emoji: "🍔",
     descripcion: "Trío de mini burgers con carne jugosa, queso americano y pan brioche.",
-    precio: "Bs. 12",
+    precio: "Bs. 15",
     tags: ["Clásica"],
     imagen: "/images/hamburguesas.avif",
     ingredientes: [
@@ -38,7 +38,7 @@ export const productos = [
     nombre: "Pipocas de Pollo",
     emoji: "🍿",
     descripcion: "Bocaditos crujientes de pollo apanado con papas y salsa de tomate.",
-    precio: "Bs. 16",
+    precio: "Bs. 18",
     tags: ["Crujiente"],
     imagen: "/images/pipocas.avif",
     ingredientes: [
@@ -53,8 +53,8 @@ export const productos = [
 ];
 
 export const bebidas = [
-  { nombre: "Coca-Cola Mini", precio: "Bs. 8",  icono: "🥤" },
-  { nombre: "Fanta Mini",     precio: "Bs. 8",  icono: "🍊" },
-  { nombre: "Sprite Mini",    precio: "Bs. 8",  icono: "💚" },
-  { nombre: "Jugo Natural",   precio: "Bs. 12", icono: "🍓" },
+  { nombre: "Coca-Cola Mini", precio: "Bs. 4",  icono: "🥤" },
+  { nombre: "Fanta Mini",     precio: "Bs. 4",  icono: "🍊" },
+  { nombre: "Sprite Mini",    precio: "Bs. 4",  icono: "💚" },
+  { nombre: "Refresco Natural", precio: "Bs. 4", icono: "🍓" },
 ];
