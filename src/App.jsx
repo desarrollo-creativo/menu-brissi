@@ -132,6 +132,22 @@ export default function App() {
           padding: '20px 16px',
           borderTop: '1px solid rgba(236,72,153,0.15)',
         }}>
+          <iframe
+            src={contacto.ubicacionEmbed}
+            title="Ubicación de El Sazón de Brissi en Google Maps"
+            width="100%"
+            height="220"
+            style={{
+              border: 0,
+              borderRadius: 16,
+              marginBottom: 16,
+              display: 'block',
+              boxShadow: '0 0 20px rgba(236,72,153,0.2)',
+            }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="strict-origin-when-cross-origin"
+          />
           <p style={{
             fontFamily: "'Dancing Script', cursive",
             fontSize: 17,
